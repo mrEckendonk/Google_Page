@@ -9,15 +9,23 @@ p {
 }
 
 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 header ul {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 a {
@@ -25,7 +33,8 @@ a {
     font-size: 1.5rem;
     text-decoration: none;
     color: black;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 10px;
     color: rgba(0, 0, 0, 0.87);
 }
@@ -60,16 +69,31 @@ form {
     grid-area: form;
     width: auto;
     height: 61rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     height: auto;
 }
@@ -77,7 +101,8 @@ form div {
 form input {
     font-size: 1.6rem;
     width: 58rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 13px 45px;
     border: 1px solid #dfe1e5;
     border-radius: 30px;
@@ -119,12 +144,14 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 }
 
 form input:hover {
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 form input:focus-visible {
     outline: none;
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 form img {
@@ -182,7 +209,9 @@ footer a {
 }
 
 #places ul {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 ul p {
@@ -193,15 +222,21 @@ ul p {
 #footer-nav {
     border-top: 1px solid #dadce0;
     grid-area: Google;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: center;
 }
 
 @media(min-width: 1000px) {
     #footer-nav {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 }
 
